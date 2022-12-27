@@ -18,23 +18,23 @@ A csapatok darabszáma: 40
 
 ### C feladat
 
-New York-i stadionok, csapatszámaikkal:
-Citi Field - 6
-Hilltop Park - 11
-Metropolitan Park - 1
-Polo Grounds I (Southeast Diamond) - 9
-Polo Grounds II (Southwest Diamond) - 1
-Polo Grounds III - 3
-Polo Grounds IV - 22
-Polo Grounds V - 60
-Shea Stadium - 48
-St. George Cricket Grounds - 3
-Yankee Stadium I - 84
-Yankee Stadium II - 6
+New York-i stadionok, csapatszámaikkal:  
+Citi Field - 6  
+Hilltop Park - 11  
+Metropolitan Park - 1  
+Polo Grounds I (Southeast Diamond) - 9  
+Polo Grounds II (Southwest Diamond) - 1  
+Polo Grounds III - 3  
+Polo Grounds IV - 22  
+Polo Grounds V - 60  
+Shea Stadium - 48  
+St. George Cricket Grounds - 3  
+Yankee Stadium I - 84  
+Yankee Stadium II - 6  
 
 ### D feladat
 
-A szeptemberi kezdő mérkőzések száma: 1 db.
+A szeptemberi kezdő mérkőzések száma: 1 db.  
 
 * **a)** Olvasd be a stadionok.txt fájlból az a stadionok adatait és tárolja el megfelelő nevű listákban! Ügyelj arra, hogy az állományok első sora az adatok fejlécét tartalmazza! (10 pont)
 * **b)** Írasd ki a csapatok darabszámát a konzolra! (1 pont)
