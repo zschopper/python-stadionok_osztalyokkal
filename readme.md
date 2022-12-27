@@ -36,7 +36,7 @@ Yankee Stadium II - 6
 
 A szeptemberi kezdő mérkőzések száma: 1 db.
 
-a) Olvasd be a stadionok.txt fájlból az a stadionok adatait és tárolja el megfelelő nevű listákban! Ügyelj arra, hogy az állományok első sora az adatok fejlécét tartalmazza! (10 pont)
-b) Írasd ki a csapatok darabszámát a konzolra!(1p)
-c) Határozd meg és írd ki a minta szerint, hogy mely csapatok találhatók New York-ban! A kiírásban a stadion neve és a csapatok száma szerepeljen (5p)
-d) Haladó: Számolja meg, hány olyan csapat van, ami szeptemberben játszotta az első mérkőzését. A program akkor is működjön, ha más hónappal helyettesítjük.
+* **a)** Olvasd be a stadionok.txt fájlból az a stadionok adatait és tárolja el megfelelő nevű listákban! Ügyelj arra, hogy az állományok első sora az adatok fejlécét tartalmazza! (10 pont)
+* **b)** Írasd ki a csapatok darabszámát a konzolra! (1 pont)
+* **c)** Határozd meg és írd ki a minta szerint, hogy mely csapatok találhatók New York-ban! A kiírásban a stadion neve és a csapatok száma szerepeljen (5 pont)
+* **d)** Haladó: Számolja meg, hány olyan csapat van, ami szeptemberben játszotta az első mérkőzését. A program akkor is működjön, ha más hónappal helyettesítjük.
