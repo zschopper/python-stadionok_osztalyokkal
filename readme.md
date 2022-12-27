@@ -10,33 +10,8 @@ A stadionok.txt állomány szerkezete:
 * mikor léptek előszőr pályára: pl.: 1984-05-13
 * mikor léptek utoljára pályára: pl.: 1985-08-23
 
-## Minta
-
-### B feladat
-
-A csapatok darabszáma: 40
-
-### C feladat
-
-New York-i stadionok, csapatszámaikkal:  
-Citi Field - 6  
-Hilltop Park - 11  
-Metropolitan Park - 1  
-Polo Grounds I (Southeast Diamond) - 9  
-Polo Grounds II (Southwest Diamond) - 1  
-Polo Grounds III - 3  
-Polo Grounds IV - 22  
-Polo Grounds V - 60  
-Shea Stadium - 48  
-St. George Cricket Grounds - 3  
-Yankee Stadium I - 84  
-Yankee Stadium II - 6  
-
-### D feladat
-
-A szeptemberi kezdő mérkőzések száma: 1 db.  
-
-* **a)** Olvasd be a stadionok.txt fájlból az a stadionok adatait és tárolja el megfelelő nevű listákban! Ügyelj arra, hogy az állományok első sora az adatok fejlécét tartalmazza! (10 pont)
-* **b)** Írasd ki a csapatok darabszámát a konzolra! (1 pont)
-* **c)** Határozd meg és írd ki a minta szerint, hogy mely csapatok találhatók New York-ban! A kiírásban a stadion neve és a csapatok száma szerepeljen (5 pont)
-* **d)** Haladó: Számolja meg, hány olyan csapat van, ami szeptemberben játszotta az első mérkőzését. A program akkor is működjön, ha más hónappal helyettesítjük.
+1. Összesen hány stadion van New Yorkban?
+2. Mennyi az összes csapatszám?
+3. listázd ki azokat a stadionokat, amelyekben  1900.01.01 előtt volt az első mérkőzésük!
+4. Hány olyan stadion van, amelyben 2000 óta nem volt mérkőzés?
+5. Összesen hány csapat játszott Buffalo-ban?
