@@ -20,7 +20,12 @@ class Csapatok:
         return self.__lista
 
     def csapatok_szama(self):
-        return len(self.__lista)
+        db = 0
+        i = 0
+        while i < len(self.__lista):
+            db += self.__lista[i].csapatok_szama
+            i += 1
+        return db
 
     def stadionok_szama_a_megadott_varosban(self, varos):
         db = 0
