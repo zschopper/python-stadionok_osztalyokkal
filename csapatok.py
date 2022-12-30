@@ -1,13 +1,15 @@
 from csv import DictReader
 from csapat import Csapat
-import datetime
 
 class Csapatok:
 
     def __init__(self, fajlnev):
         self.__fajlnev = fajlnev
         self.__lista = []
+        self.betolt()
 
+    def betolt(self):
+        self.__lista = []
         with open(self.__fajlnev, mode="r", encoding="utf-8") as fh:
             reader = DictReader(fh, delimiter=";")
             for data in reader:
@@ -17,16 +19,29 @@ class Csapatok:
     def get_lista(self):
         return self.__lista
 
-    def varosi_lista(self, varos):
-        return [i for i in self.__lista if i.varos == varos]
+    def csapatok_szama_a_megadott_varosban(self, varos):
+        db = 0
+        i = 0
+        while i < len(self.__lista):
+            if self.__lista[i].varos == varos:
+                db += 1
+            i += 1
+        return db
 
-    def elso_merkozes_honapja(self, honap):
-        return [i for i in self.__lista if datetime.datetime.strptime(i.elso_merkozes, "%Y-%m-%d").month == honap]
+    def elso_merkozesek_szama_a_megadott_datum_elott(self, datum):
+        db = 0
+        i = 0
+        while i < len(self.__lista):
+            if self.__lista[i].elso_merkozes < datum:
+                db += 1
+            i += 1
+        return db
 
-    def elso_merkozes_datum_elott(self, datum):
-        datum_obj = datetime.datetime.strptime(datum, "%Y-%m-%d")
-        return [i for i in self.__lista if datetime.datetime.strptime(i.elso_merkozes, "%Y-%m-%d") < datum_obj]
-
-    def utolso_merkozes_datum_utan(self, datum):
-        datum_obj = datetime.datetime.strptime(datum, "%Y-%m-%d")
-        return [i for i in self.__lista if datetime.datetime.strptime(i.utolso_merkozes, "%Y-%m-%d") >= datum_obj]
+    def utolso_merkozesek_szama_a_megadott_datum_utan(self, datum):
+        db = 0
+        i = 0
+        while i < len(self.__lista):
+            if self.__lista[i].utolso_merkozes >= datum:
+                db += 1
+            i += 1
+        return db
