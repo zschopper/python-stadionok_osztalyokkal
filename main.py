@@ -2,28 +2,29 @@ from csapatok import Csapatok
 
 cs = Csapatok('stadionok.txt')
 
-varos = "Buffalo"
-print(f"\n1. feladat: *** {varos}-i csapatok ***\n")
+# 1. feladat
+varos = "New York"
+print(f"\n1. feladat: *** {varos}-i stadionok ***\n")
 
-db = cs.csapatok_szama_a_megadott_varosban(varos)
-# for csapat in lista:
-#     print(f"{csapat.stadion} - {csapat.csapatok_szama}")
+db = cs.stadionok_szama_a_megadott_varosban(varos)
 
 if db:
     print(f"Összesen {db} csapat")
 else:
     print("Nincs a feltételnek megfelelő csapat")
 
+# 2. feladat
+
 print("\n2. feladat: *** Csapatok ***")
 
-lista = cs.get_lista()
-# for csapat in lista:
-#     print(csapat)
+db = cs.csapatok_szama()
 
-if len(lista):
-    print(f"A csapatok darabszáma: {len(lista)}")
+if db:
+    print(f"A csapatok darabszáma: {db}")
 else:
     print("Nincs csapat a listán")
+
+# 3. feladat
 
 datum = "1900-01-01"
 print(f"\n3. feladat: *** Kezdő mérkőzések {datum} előtt ***\n")
@@ -34,12 +35,26 @@ if db:
 else:
     print("Nincs a feltételnek megfelelő csapat")
 
+# 4. feladat
 
 datum = "2000-01-01"
-print(f"\n4. feladat: *** Utolsó mérkőzések {datum} után ***\n")
+print(f"\n4. feladat: *** Utolsó mérkőzések {datum} előtt ***\n")
 
-db = cs.utolso_merkozesek_szama_a_megadott_datum_utan(datum)
+db = cs.utolso_merkozesek_szama_a_megadott_datum_elott(datum)
 if db:
     print(f"Összesen {db} csapat")
 else:
     print("Nincs a feltételnek megfelelő csapat")
+
+# 5. feladat
+
+varos = "Buffalo"
+print(f"\n5. feladat: *** {varos}-i csapatok ***\n")
+
+db = cs.csapatok_szama_a_megadott_varosban(varos)
+
+if db:
+    print(f"Összesen {db} csapat")
+else:
+    print("Nincs a feltételnek megfelelő csapat")
+
