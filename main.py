@@ -38,7 +38,7 @@ else:
 # 4. feladat
 
 datum = "2000-01-01"
-print(f"\n4. feladat: *** Utolsó mérkőzések {datum} előtt ***\n")
+print("\n4. feladat")
 
 db = cs.utolso_merkozesek_szama_a_megadott_datum_elott(datum)
 if db:
@@ -57,4 +57,3 @@ if db:
     print(f"Összesen {db} db {varos}-i csapat van")
 else:
     print(f"Nincs {varos}-i csapat")
-
